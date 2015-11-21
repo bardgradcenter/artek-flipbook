@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  width: 100%;
+  color: #000000;
+  font-size: 10px; }
+
+#container {
+  width: 1280px;
+  padding: 50px 0;
+  position: relative; }
+
+.gallery {
+  overflow: hidden;
+  position: relative;
+  width: 87.5%;
+  margin-right: 6.25%;
+  margin-left: 6.25%; }
+  .gallery ul {
+    list-style: none; }
+  .gallery .imageGallery {
+    list-style: none;
+    margin: 34px 0 15px 0;
+    padding: 0;
+    background: transparent;
+    position: relative; }
+    .gallery .imageGallery li {
+      text-align: center;
+      float: left;
+      position: relative; }
+    .gallery .imageGallery img {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%; }
+    .gallery .imageGallery .image_border {
+      border: 5px solid #000; }
+    .gallery .imageGallery .gallery_text {
+      text-align: left;
+      padding: 10px; }
+  .gallery .theDots {
+    width: 100%;
+    margin-bottom: 0px;
+    z-index: 100;
+    position: absolute; }
+    .gallery .theDots ul {
+      float: right;
+      width: 100%;
+      height: 34px;
+      position: relative; }
+    .gallery .theDots li {
+      list-style: none;
+      height: 34px;
+      width: 12px;
+      position: absolute;
+      border-bottom: 2px solid #000;
+      text-align: center; }
+      .gallery .theDots li div {
+        height: 8px;
+        border: 2px solid #000;
+        margin-top: 22px; }
+      .gallery .theDots li.bookmark div {
+        visibility: visible;
+        border: 2px solid #000000;
+        width: 10px;
+        height: 30px;
+        margin: 0 auto;
+        cursor: pointer; }
+        .gallery .theDots li.bookmark div:hover {
+          background-color: #000000; }
+      .gallery .theDots li.active div {
+        background-color: #000000; }
+
+.gallery_controls {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+  height: 38px;
+  z-index: 90;
+  font-size: 1.72727272727273em; }
+  .gallery_controls .prev {
+    width: 6.25%;
+    height: 26px;
+    position: absolute;
+    left: 0;
+    top: -80px;
+    bottom: 0;
+    margin: auto; }
+    .gallery_controls .prev:hover {
+      cursor: pointer; }
+  .gallery_controls .next {
+    width: 6.25%;
+    height: 26px;
+    position: absolute;
+    right: 0;
+    top: -80px;
+    bottom: 0;
+    margin: auto; }
+    .gallery_controls .next:hover {
+      cursor: pointer; }
