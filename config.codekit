@@ -55,6 +55,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/DV-206.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.43046e+06,
+		"inputAbbreviatedPath": "\/images\/DV-206.jpg",
+		"outputAbbreviatedPath": "\/images\/DV-206.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/i7-43-Sunila.jpg": {
 		"fileType": 16384,
 		"ignore": 0,

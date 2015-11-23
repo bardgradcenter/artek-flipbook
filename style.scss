@@ -5,12 +5,13 @@
 body {
 	width: 100%;
 	color:#000000;
-	font-size: 10px;
+	font-size: 100%;
 }
 #container {
-	width: 1280px;
+	width: 100%;
 	padding: 50px 0;
 	position: relative;
+	font-size: .75em;
 }
 .gallery {
 	overflow: hidden;
@@ -31,9 +32,80 @@ body {
 			text-align: center;
 			float: left;
 			position: relative;
+			display: none;
+			&.active {
+				display: block;
+			}
+			.image_container {
+				position: relative;
+				margin: 0 auto;
+			}
+			.hotspot {
+				position: absolute;
+				border:2px solid #ff0000;
+			}
+			.overlay {
+				position: fixed;
+				z-index:10000;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height:100%;
+				display: none;
+				background-color: rgba(255,255,255,0.8);
+				.overlay_container {
+					width: 85%;
+					height: 85%;
+					background-color: #fff;
+					top: 7.5%;
+					left: 7.5%;
+					border: 2px solid #000;
+					position: absolute;
+					.overlay_content {
+						height: 100%;
+						width: 100%;
+						position: absolute;
+						overflow: scroll;
+						text-align: left;
+					}
+					.left_column {
+						width: 50%;
+						height: 100%;
+						left: 0;
+						top:0;
+						position: absolute;
+						img {
+							max-height: 100%;
+							max-width: 100%;
+							width: auto;
+							height: auto;
+							position: relative;
+						}
+						.tombstone {
+							width: 40%;
+							margin: 2% 10%;
+						}
+
+					}
+					.right_column {
+						width: 40%;
+						height: 90%;
+						right: 5%;
+						top:5%;
+						position: absolute;
+					}
+					.close {
+						position: absolute;
+						top:-2px;
+						right:-2px;
+						border:2px solid #000;
+						padding: 10px;
+					}
+				}
+			}
 		}
 		img {
-			width: auto;
+			width: 100%;
 			height: auto;
 			max-width: 100%;
 			max-height: 100%;
@@ -52,6 +124,7 @@ body {
 		margin-bottom: 0px;
 		z-index: 100;
 		position: absolute;
+		font-size: .83333333em;
 		ul {
 			float:right;
 			width: 100%;
@@ -61,20 +134,22 @@ body {
 		li {
 			list-style: none;
 			height: 34px;
-			width: 12px;
-			position: absolute;
-			border-bottom:2px solid #000;
+			width: 2%;
+			padding: 0 .25%;
+			position: relative;
+			float: left;
 			text-align: center;
 			div {
 				height: 8px;
 				border:2px solid #000;
-				margin-top: 22px;
+				border-bottom:none;
+				margin-top: 24px;
 			}
 			&.bookmark div {
 				visibility: visible;
 				border:2px solid #000000;
-				width: 10px;
-				height: 30px;
+				border-bottom:none;
+				height: 32px;
 				margin: 0 auto;
 				cursor: pointer;
 				&:hover {
@@ -124,3 +199,6 @@ body {
 		}
 	}
 }
+
+
+
