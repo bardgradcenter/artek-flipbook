@@ -53,7 +53,7 @@ body {
           width: 85%;
           height: 85%;
           background-color: #fff;
-          top: 7.5%;
+          top: 60px;
           left: 7.5%;
           border: 2px solid #000;
           position: absolute; }
@@ -86,7 +86,7 @@ body {
             position: absolute; }
           .gallery .imageGallery li .overlay .overlay_container .close {
             position: absolute;
-            top: -2px;
+            top: -50px;
             right: -2px;
             border: 2px solid #000;
             padding: 10px; }
@@ -134,7 +134,8 @@ body {
         .gallery .theDots li.bookmark div:hover {
           background-color: #000000; }
       .gallery .theDots li.active div {
-        background-color: #000000; }
+        background-color: #000000;
+        color: #fff; }
 
 .gallery_controls {
   position: absolute;
