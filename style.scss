@@ -31,10 +31,20 @@ body {
 		li {
 			text-align: center;
 			float: left;
-			position: relative;
+			position: absolute;
 			display: none;
+			background-color: #fff;
+			z-index:400;
 			&.active {
 				display: block;
+				z-index: 500;
+			}
+			&.moving {
+				z-index: 1000;
+				display: block;
+			}
+			&.skipping {
+				z-index: 450;
 			}
 			.image_container {
 				position: relative;
@@ -111,7 +121,7 @@ body {
 			max-height: 100%;
 		}
 		.image_border {
-			border:5px solid #000;
+			border-top:2px solid #000;
 		}
 
 		.gallery_text {
