@@ -9,7 +9,10 @@ function glow(that){
 function slide_forward(that, target, zindex){
 	var imageWidth = ($('ul.imageGallery li.active').width())*(-1);
 	if($(that).is(target)){
-		$('ul.imageGallery li.active').removeClass('active');
+		var the_active = $('ul.imageGallery li.active');
+		setTimeout(function(){
+			$(the_active).removeClass('active');
+		}, 650);
 		$(target).addClass('active').removeClass('target');
 	} else {
 		setTimeout(function(){
@@ -27,6 +30,7 @@ function slide_forward(that, target, zindex){
 function slide_backward(that, target, zindex){
 	var imageWidth = ($('ul.imageGallery li.active').width())*(-1);
 	if($(that).is(target)){
+		var the_active = $('ul.imageGallery li.active');
 		setTimeout(function(){
 			$(that).css('z-index',zindex).show().animate({
 				left: '-=' + imageWidth
@@ -34,7 +38,9 @@ function slide_backward(that, target, zindex){
 				$(that).css('display','').css('z-index','');
 			});
 		}, 50);
-		$('ul.imageGallery li.active').removeClass('active').css('display','');
+		setTimeout(function(){
+			$(the_active).removeClass('active').css('display','');
+		}, 650);
 		$(target).addClass('active').removeClass('target');
 	} else {
 		setTimeout(function(){
