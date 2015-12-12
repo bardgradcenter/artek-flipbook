@@ -84,6 +84,7 @@ $(function(){
 	$('.theDots li:first-of-type').addClass('active');
 	
 	$('.gallery_controls .prev').click(function(){
+		$('.overlay:visible').fadeOut(300);
 		var imageWidth = ($('ul.imageGallery li.active').width())*(-1);
 		var active = $('ul.imageGallery li.active');
 		var prev = $(active).prev('li');
@@ -112,6 +113,7 @@ $(function(){
 		}
 	});
 	$('.gallery_controls .next').click(function(){
+		$('.overlay:visible').fadeOut(300);
 		var imageWidth = ($('ul.imageGallery li.active').width())*(-1);
 		var active = $('ul.imageGallery li.active');
 		var next = $(active).next('li');
@@ -141,6 +143,7 @@ $(function(){
 	});
 
 	$('.theDots li').click(function(){
+		$('.overlay:visible').fadeOut(300);
 		// var index = $(this).index();
 		// var imageWidth = ($('ul.imageGallery li.active').width())*(-1);
 		// var scrollTo = 	imageWidth * index;
@@ -162,7 +165,26 @@ $(function(){
 		glow(this);
 	});
 	$('.hotspot').click(function(){
-		$(this).next('.overlay').fadeIn(300);
+		$('.overlay:visible').fadeOut(300);
+		var hotspot = $(this);
+		var overlay = $(this).next('.overlay');
+		var hotspot_left = $(hotspot).css('left').replace('px', '');
+		var gallery_width = $('.gallery').width();
+		var percent_left = hotspot_left / gallery_width * 100;
+		if(percent_left < 50){
+			$(overlay).css('left', '50%');
+			$(overlay).find('.overlay_container').css('left','initial').css('right','7.5%');
+		} else {
+		}
+		var hotspot_top = $(hotspot).css('top').replace('px', '');
+		var gallery_height = $('.gallery').height();
+		var percent_top = hotspot_top / gallery_height * 100;
+		
+		if(percent_top > 44){
+			$(overlay).find('.overlay_container').css('top','initial').css('bottom','60px');
+		} else {
+		}
+		$(overlay).fadeIn(300);
 	});
 	$('.close').click(function(){
 		$(this).parent().parent().fadeOut(300);
