@@ -12,6 +12,7 @@ function slide_forward(that, target, zindex){
 		var the_active = $('ul.imageGallery li.active');
 		setTimeout(function(){
 			$(the_active).removeClass('active');
+			$('#container').removeClass('wait');
 		}, 350);
 		$(target).addClass('active').removeClass('target');
 	} else {
@@ -38,6 +39,7 @@ function slide_backward(that, target, zindex){
 		}, 50);
 		setTimeout(function(){
 			$(the_active).removeClass('active');
+			$('#container').removeClass('wait');
 		}, 350);
 		$(target).addClass('active').removeClass('target');
 	} else {
@@ -81,78 +83,91 @@ $(function(){
 	$('.theDots li:first-of-type').addClass('active');
 	
 	$('.gallery_controls .prev').click(function(){
-		$('.overlay:visible').fadeOut(300);
-		var imageWidth = ($('ul.imageGallery li.active').width())*(-1);
-		var active = $('ul.imageGallery li.active');
-		var prev = $(active).prev('li');
-		if($(active).prev('li').length){
-			$(active).removeClass('active');
-			$(prev).addClass('active').addClass('moving');
-			$(prev).animate({
-				left: '-=' + imageWidth
-			}, 300, function(){
-				var theDot = ('.theDots #') + ($('ul.imageGallery li.active').attr('id'));
-				$('.theDots li.active').removeClass('active');
-				$(theDot).addClass('active');
-				$(prev).removeClass('moving');
-			});
-		} else {
-//			$('ul.imageGallery').animate({
-				// left: '-=' + imageWidth
-//			}, 300, function(){
-//				$('ul.imageGallery li.active').removeClass('active');
-//				$('ul.imageGallery li:last-of-type').addClass('active');
-//				var theDot = ('.theDots #') + ($('ul.imageGallery li.active').attr('id'));
-//				$('.theDots li.active').removeClass('active');
-//				$(theDot).addClass('active');
-//			});
+		if($('#container').hasClass('wait')){
+
+		} else { 
+			$('.overlay:visible').fadeOut(300);
+			var imageWidth = ($('ul.imageGallery li.active').width())*(-1);
+			var active = $('ul.imageGallery li.active');
+			var prev = $(active).prev('li');
+			if($(active).prev('li').length){
+				$(active).removeClass('active');
+				$(prev).addClass('active').addClass('moving');
+				$(prev).animate({
+					left: '-=' + imageWidth
+				}, 300, function(){
+					var theDot = ('.theDots #') + ($('ul.imageGallery li.active').attr('id'));
+					$('.theDots li.active').removeClass('active');
+					$(theDot).addClass('active');
+					$(prev).removeClass('moving');
+				});
+			} else {
+	//			$('ul.imageGallery').animate({
+					// left: '-=' + imageWidth
+	//			}, 300, function(){
+	//				$('ul.imageGallery li.active').removeClass('active');
+	//				$('ul.imageGallery li:last-of-type').addClass('active');
+	//				var theDot = ('.theDots #') + ($('ul.imageGallery li.active').attr('id'));
+	//				$('.theDots li.active').removeClass('active');
+	//				$(theDot).addClass('active');
+	//			});
+			}
 		}
 	});
 	$('.gallery_controls .next').click(function(){
-		$('.overlay:visible').fadeOut(300);
-		var imageWidth = ($('ul.imageGallery li.active').width())*(-1);
-		var active = $('ul.imageGallery li.active');
-		var next = $(active).next('li');
-		if($(active).next('li').length){
-			$(active).removeClass('active').addClass('moving');
-			$(next).addClass('active');
-			$(active).animate({
-				left: '+=' + imageWidth
-			}, 300, function(){
-				$(active).removeClass('moving');
-				var theDot = ('.theDots #') + ($('ul.imageGallery li.active').attr('id'));
-				$('.theDots li.active').removeClass('active');
-				$(theDot).addClass('active');
-			});
-		} else {
-//			$('ul.imageGallery').animate({
-				// left: '-=' + imageWidth
-//			}, 300, function(){
-//				$('ul.imageGallery li.active').removeClass('active');
-//				$('ul.imageGallery li:first-of-type').addClass('active');
-//				var theDot = ('.theDots #') + ($('ul.imageGallery li.active').attr('id'));
-//				$('.theDots li.active').removeClass('active');
-//				$(theDot).addClass('active');
-//			});
+		if($('#container').hasClass('wait')){
+
+		} else { 
+			$('.overlay:visible').fadeOut(300);
+			var imageWidth = ($('ul.imageGallery li.active').width())*(-1);
+			var active = $('ul.imageGallery li.active');
+			var next = $(active).next('li');
+			if($(active).next('li').length){
+				$(active).removeClass('active').addClass('moving');
+				$(next).addClass('active');
+				$(active).animate({
+					left: '+=' + imageWidth
+				}, 300, function(){
+					$(active).removeClass('moving');
+					var theDot = ('.theDots #') + ($('ul.imageGallery li.active').attr('id'));
+					$('.theDots li.active').removeClass('active');
+					$(theDot).addClass('active');
+				});
+			} else {
+	//			$('ul.imageGallery').animate({
+					// left: '-=' + imageWidth
+	//			}, 300, function(){
+	//				$('ul.imageGallery li.active').removeClass('active');
+	//				$('ul.imageGallery li:first-of-type').addClass('active');
+	//				var theDot = ('.theDots #') + ($('ul.imageGallery li.active').attr('id'));
+	//				$('.theDots li.active').removeClass('active');
+	//				$(theDot).addClass('active');
+	//			});
+			}
 		}
 	});
 
 	$('.theDots li').click(function(){
-		$('.overlay:visible').fadeOut(300);
-		// var index = $(this).index();
-		// var imageWidth = ($('ul.imageGallery li.active').width())*(-1);
-		// var scrollTo = 	imageWidth * index;
-		var theDot = '#' + $(this).attr('id');
-		$('.theDots li.active').removeClass('active');
-		$(this).addClass('active');
-		$('ul.imageGallery').find(theDot).addClass('target');
-		var that = $('ul.imageGallery li.active');
-		var target = $('li.target');
-		if($(that).isBefore($(target)) === true){
-			slide_forward(that, target, 100000);
-		} else if ($(that).isAfter($(target)) === true){
-			var that = that.prev('li');
-			slide_backward(that, target, 100000);
+		if($('#container').hasClass('wait')){
+
+		} else { 
+			$('#container').addClass('wait');
+			$('.overlay:visible').fadeOut(300);
+			// var index = $(this).index();
+			// var imageWidth = ($('ul.imageGallery li.active').width())*(-1);
+			// var scrollTo = 	imageWidth * index;
+			var theDot = '#' + $(this).attr('id');
+			$('.theDots li.active').removeClass('active');
+			$(this).addClass('active');
+			$('ul.imageGallery').find(theDot).addClass('target');
+			var that = $('ul.imageGallery li.active');
+			var target = $('li.target');
+			if($(that).isBefore($(target)) === true){
+				slide_forward(that, target, 100000);
+			} else if ($(that).isAfter($(target)) === true){
+				var that = that.prev('li');
+				slide_backward(that, target, 100000);
+			}
 		}
 	});
 
