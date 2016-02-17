@@ -13,6 +13,14 @@ body {
   padding: 15px 0 0;
   position: relative;
   font-size: .75em; }
+  #container.AMA .intro_screen {
+    left: 50%; }
+  #container.AMA .imageGallery {
+    left: 100%; }
+  #container.AMA .overlay_content {
+    text-align: center; }
+  #container.AMA .next, #container.AMA .prev {
+    top: 0; }
 
 .gallery {
   overflow: hidden;
@@ -83,17 +91,30 @@ body {
           background-color: #fff;
           top: 60px;
           right: 7.5%;
-          border: 2px solid #000;
+          border: 2px solid;
+          border-color: #d51c38;
           margin-top: 54px;
           position: absolute;
           -moz-box-shadow: 0px 3px 10px rgba(68, 68, 68, 0.6);
           -webkit-box-shadow: 0px 3px 10px rgba(68, 68, 68, 0.6);
           box-shadow: 0px 3px 10px rgba(68, 68, 68, 0.6); }
+          .gallery .imageGallery li.single_image .overlay .overlay_container.full {
+            width: 90%; }
           .gallery .imageGallery li.single_image .overlay .overlay_container .overlay_content {
             height: auto;
             width: 100%;
             position: static;
             overflow: scroll;
+            text-align: left; }
+          .gallery .imageGallery li.single_image .overlay .overlay_container img {
+            max-height: 300px;
+            max-width: 100%;
+            width: auto;
+            height: auto;
+            position: relative; }
+          .gallery .imageGallery li.single_image .overlay .overlay_container .tombstone {
+            width: 100%;
+            margin: 2% 0 0;
             text-align: left; }
           .gallery .imageGallery li.single_image .overlay .overlay_container .left_column {
             width: 50%;
@@ -101,15 +122,6 @@ body {
             left: 0;
             top: 0;
             position: absolute; }
-            .gallery .imageGallery li.single_image .overlay .overlay_container .left_column img {
-              max-height: 100%;
-              max-width: 100%;
-              width: auto;
-              height: auto;
-              position: relative; }
-            .gallery .imageGallery li.single_image .overlay .overlay_container .left_column .tombstone {
-              width: 40%;
-              margin: 2% 10%; }
           .gallery .imageGallery li.single_image .overlay .overlay_container .right_column {
             width: 40%;
             height: 90%;
@@ -126,7 +138,9 @@ body {
             position: absolute;
             top: -50px;
             right: -2px;
-            border: 2px solid #000;
+            border: 2px solid;
+            border-color: #d51c38;
+            color: #d51c38;
             padding: 10px;
             background-color: #fff;
             -moz-box-shadow: 0px 3px 10px rgba(68, 68, 68, 0.6);
