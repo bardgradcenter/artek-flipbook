@@ -17,20 +17,20 @@ body {
 .gallery {
   overflow: hidden;
   position: relative;
-  width: 87.5%;
-  margin-right: 6.25%;
-  margin-left: 6.25%; }
+  width: 85%;
+  margin-right: 7.5%;
+  margin-left: 7.5%; }
   .gallery ul {
     list-style: none; }
   .gallery .intro_screen {
     width: 48%;
-    height: 100%;
-    top: 65px;
+    height: 85%;
+    top: 68px;
     position: absolute;
     font-size: 1.33333333333333em; }
     .gallery .intro_screen .intro_padding {
       border: 3px solid black;
-      height: 90%;
+      height: 100%;
       position: relative; }
       .gallery .intro_screen .intro_padding .text-content {
         bottom: 0px;

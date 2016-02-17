@@ -271,8 +271,8 @@ $(function(){
 		var gallery_height = $('.gallery').height();
 		var percent_top = hotspot_top / gallery_height * 100;
 		
-		if(percent_top > 44){
-			$(overlay).find('.overlay_container').css('top', percent_top + '%');
+		if(percent_top > 66){
+			$(overlay).find('.overlay_container').css('bottom', '10%').css('top','auto');
 		} else {
 			$(overlay).find('.overlay_container').css('top', percent_top + '%');
 		}
