@@ -161,23 +161,23 @@ body {
       text-align: center;
       overflow: hidden; }
       .gallery .theDots li div.page {
-        height: 10px;
-        width: 10px;
+        height: 6px;
+        width: 6px;
         border: 2px solid #000;
         background-color: #000;
         margin-top: 12px;
-        border-radius: 7px; }
+        border-radius: 5px; }
       .gallery .theDots li.bookmark .arrow-top {
         background-color: black;
         height: 35px;
-        width: 14px;
+        width: 12px;
         margin: 0 auto;
         cursor: pointer; }
       .gallery .theDots li.bookmark .arrow-bottom {
         width: 0;
         height: 0;
         margin: auto;
-        border: 7px solid transparent;
+        border: 6px solid transparent;
         border-top-color: black; }
       .gallery .theDots li:hover div.page {
         background-color: #e71c38;
