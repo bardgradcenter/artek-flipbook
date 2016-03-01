@@ -29,6 +29,14 @@ img {
 		.next, .prev {
 			top: 0;
 		}
+		.overlay_container {
+			right:0;
+			left: 7.5%;
+			background-color: #eeebe0;
+		}
+		.close {
+			background-color: #eeebe0;
+		}
 	}
 }
 .gallery {
@@ -128,15 +136,16 @@ img {
 						height: auto;
 						width: 100%;
 						position: static;
-						overflow: scroll;
+						/* overflow: scroll; */
 						text-align: left;
 					}
 					img {
-						max-height: 300px;
+						max-height: 460px;
 						max-width: 100%;
 						width: auto;
 						height: auto;
 						position: relative;
+						margin: 0 auto;
 					}
 					.tombstone {
 						width: 100%;

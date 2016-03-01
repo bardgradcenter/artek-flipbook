@@ -24,6 +24,12 @@ img {
     text-align: center; }
   #container.AMA .next, #container.AMA .prev {
     top: 0; }
+  #container.AMA .overlay_container {
+    right: 0;
+    left: 7.5%;
+    background-color: #eeebe0; }
+  #container.AMA .close {
+    background-color: #eeebe0; }
 
 .gallery {
   overflow: hidden;
@@ -107,14 +113,15 @@ img {
             height: auto;
             width: 100%;
             position: static;
-            overflow: scroll;
+            /* overflow: scroll; */
             text-align: left; }
           .gallery .imageGallery li.single_image .overlay .overlay_container img {
-            max-height: 300px;
+            max-height: 460px;
             max-width: 100%;
             width: auto;
             height: auto;
-            position: relative; }
+            position: relative;
+            margin: 0 auto; }
           .gallery .imageGallery li.single_image .overlay .overlay_container .tombstone {
             width: 100%;
             margin: 2% 0 0;
