@@ -42,12 +42,12 @@ img {
     height: 85%;
     top: 68px;
     position: absolute;
-    font-size: 1.33333333333333em;
-    background-color: #eeebe0; }
+    font-size: 1.33333333333333em; }
     .gallery .intro_screen .intro_padding {
       border: 3px solid black;
       height: 100%;
-      position: relative; }
+      position: relative;
+      background-color: #eeebe0; }
       .gallery .intro_screen .intro_padding .text-content {
         bottom: 0px;
         padding: 40px;
