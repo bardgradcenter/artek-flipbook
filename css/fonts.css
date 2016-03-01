@@ -1,0 +1,34 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3179531, 2016-03-01T18:22:41-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: FuturaLTPro-Heavy by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/futura/pro-heavy/
+ * 
+ * Webfont: FuturaLTPro-HeavyOblique by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/futura/pro-heavy-oblique/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3179531
+ * Licensed pageviews: 500,000
+ * Webfonts copyright: Part of the digitally encoded machine readable outline data for producing the Typefaces provided is copyrighted &#x00A9; 2007 Linotype GmbH, www.linotype.com. All rights reserved. This software is the property of Linotype GmbH, and may not be reproduced, 
+ * 
+ * © 2016 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/30840b");
+
+  
+@font-face {font-family: 'FuturaLTPro-Heavy';src: url('webfonts/30840B_0_0.eot');src: url('webfonts/30840B_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/30840B_0_0.woff2') format('woff2'),url('webfonts/30840B_0_0.woff') format('woff'),url('webfonts/30840B_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'FuturaLTPro-HeavyOblique';src: url('webfonts/30840B_1_0.eot');src: url('webfonts/30840B_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/30840B_1_0.woff2') format('woff2'),url('webfonts/30840B_1_0.woff') format('woff'),url('webfonts/30840B_1_0.ttf') format('truetype');}
+ 

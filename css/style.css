@@ -7,7 +7,7 @@ body {
   color: #000000;
   background-color: #9b9992;
   font-size: 100%;
-  font-family: 'Futura', sans-serif; }
+  font-family: 'FuturaLTPro-Heavy', sans-serif; }
 
 img {
   display: block; }
@@ -56,7 +56,8 @@ img {
           padding-bottom: 45px;
           font-size: 1.75em;
           text-align: right;
-          text-transform: lowercase; }
+          text-transform: lowercase;
+          font-weight: normal; }
   .gallery .imageGallery {
     list-style: none;
     margin: 50px 0 15px 0;
