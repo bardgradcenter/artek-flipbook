@@ -5,6 +5,7 @@
 body {
   width: 100%;
   color: #000000;
+  background-color: #9b9992;
   font-size: 100%;
   font-family: 'Futura', sans-serif; }
 
@@ -26,10 +27,7 @@ img {
     top: 0; }
   #container.AMA .overlay_container {
     right: 0;
-    left: 7.5%;
-    background-color: #eeebe0; }
-  #container.AMA .close {
-    background-color: #eeebe0; }
+    left: 7.5%; }
 
 .gallery {
   overflow: hidden;
@@ -44,7 +42,8 @@ img {
     height: 85%;
     top: 68px;
     position: absolute;
-    font-size: 1.33333333333333em; }
+    font-size: 1.33333333333333em;
+    background-color: #eeebe0; }
     .gallery .intro_screen .intro_padding {
       border: 3px solid black;
       height: 100%;
@@ -97,7 +96,7 @@ img {
           width: 50%;
           height: auto;
           /* min-height:50%; */
-          background-color: #fff;
+          background-color: #eeebe0;
           top: 60px;
           right: 7.5%;
           border: 2px solid;
@@ -152,7 +151,7 @@ img {
             border-color: #d51c38;
             color: #d51c38;
             padding: 10px;
-            background-color: #fff;
+            background-color: #eeebe0;
             -moz-box-shadow: 0px 3px 10px rgba(68, 68, 68, 0.6);
             -webkit-box-shadow: 0px 3px 10px rgba(68, 68, 68, 0.6);
             box-shadow: 0px 3px 10px rgba(68, 68, 68, 0.6); }
