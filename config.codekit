@@ -20,6 +20,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/css\/fonts.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/fonts.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/css\/style.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -29,24 +38,24 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/images\/AMA_00.png": {
-		"fileType": 32768,
+	"\/images\/AMA_00.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 584785,
-		"inputAbbreviatedPath": "\/images\/AMA_00.png",
-		"outputAbbreviatedPath": "\/images\/AMA_00.png",
+		"initialSize": 402958,
+		"inputAbbreviatedPath": "\/images\/AMA_00.jpg",
+		"outputAbbreviatedPath": "\/images\/AMA_00.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/AMA_07.png": {
-		"fileType": 32768,
+	"\/images\/AMA_07.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 563533,
-		"inputAbbreviatedPath": "\/images\/AMA_07.png",
-		"outputAbbreviatedPath": "\/images\/AMA_07.png",
+		"initialSize": 479169,
+		"inputAbbreviatedPath": "\/images\/AMA_07.jpg",
+		"outputAbbreviatedPath": "\/images\/AMA_07.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -62,24 +71,145 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/AMA_07_b.jpg": {
+	"\/images\/AMA_09.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 535123,
-		"inputAbbreviatedPath": "\/images\/AMA_07_b.jpg",
-		"outputAbbreviatedPath": "\/images\/AMA_07_b.jpg",
+		"initialSize": 465653,
+		"inputAbbreviatedPath": "\/images\/AMA_09.jpg",
+		"outputAbbreviatedPath": "\/images\/AMA_09.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/AMA_09.png": {
+	"\/images\/AMA_09_a.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 568293,
-		"inputAbbreviatedPath": "\/images\/AMA_09.png",
-		"outputAbbreviatedPath": "\/images\/AMA_09.png",
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/AMA_09_a.png",
+		"outputAbbreviatedPath": "\/images\/AMA_09_a.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/AMA_15.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 526273,
+		"inputAbbreviatedPath": "\/images\/AMA_15.jpg",
+		"outputAbbreviatedPath": "\/images\/AMA_15.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/AMA_18.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 428566,
+		"inputAbbreviatedPath": "\/images\/AMA_18.jpg",
+		"outputAbbreviatedPath": "\/images\/AMA_18.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/AMA_19.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 507548,
+		"inputAbbreviatedPath": "\/images\/AMA_19.jpg",
+		"outputAbbreviatedPath": "\/images\/AMA_19.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/AMA_20.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 470717,
+		"inputAbbreviatedPath": "\/images\/AMA_20.jpg",
+		"outputAbbreviatedPath": "\/images\/AMA_20.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/AMA_22.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 370861,
+		"inputAbbreviatedPath": "\/images\/AMA_22.jpg",
+		"outputAbbreviatedPath": "\/images\/AMA_22.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/AMA_28.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 554047,
+		"inputAbbreviatedPath": "\/images\/AMA_28.jpg",
+		"outputAbbreviatedPath": "\/images\/AMA_28.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/AMA_39.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 594977,
+		"inputAbbreviatedPath": "\/images\/AMA_39.jpg",
+		"outputAbbreviatedPath": "\/images\/AMA_39.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/AMA_46.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 647688,
+		"inputAbbreviatedPath": "\/images\/AMA_46.jpg",
+		"outputAbbreviatedPath": "\/images\/AMA_46.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/AMA_62.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 475311,
+		"inputAbbreviatedPath": "\/images\/AMA_62.jpg",
+		"outputAbbreviatedPath": "\/images\/AMA_62.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/AMA_63.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 562505,
+		"inputAbbreviatedPath": "\/images\/AMA_63.jpg",
+		"outputAbbreviatedPath": "\/images\/AMA_63.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/AMA_64.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 605366,
+		"inputAbbreviatedPath": "\/images\/AMA_64.jpg",
+		"outputAbbreviatedPath": "\/images\/AMA_64.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -157,6 +287,17 @@
 		"initialSize": 0,
 		"inputAbbreviatedPath": "\/images\/p46.png",
 		"outputAbbreviatedPath": "\/images\/p46.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/pages_for_interactive_b.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 605366,
+		"inputAbbreviatedPath": "\/images\/pages_for_interactive_b.jpg",
+		"outputAbbreviatedPath": "\/images\/pages_for_interactive_b.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
