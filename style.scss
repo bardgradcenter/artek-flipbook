@@ -31,9 +31,14 @@ img {
 		.next, .prev {
 			top: 0;
 		}
+		.overlay {
+			width: 63%;
+		}
 		.overlay_container {
+			top:.5%;
 			right:0;
-			left: 7.5%;
+			bottom:2.5%;
+			left: 2.5%;
 		}
 	}
 }

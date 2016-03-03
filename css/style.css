@@ -26,9 +26,13 @@ img {
     text-align: center; }
   #container.AMA .next, #container.AMA .prev {
     top: 0; }
+  #container.AMA .overlay {
+    width: 63%; }
   #container.AMA .overlay_container {
+    top: .5%;
     right: 0;
-    left: 7.5%; }
+    bottom: 2.5%;
+    left: 2.5%; }
 
 .gallery {
   overflow: hidden;
