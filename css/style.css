@@ -27,7 +27,8 @@ img {
   #container.AMA .next, #container.AMA .prev {
     top: 0; }
   #container.AMA .overlay {
-    width: 63%; }
+    width: 63%;
+    font-size: .75em; }
   #container.AMA .overlay_container {
     top: .5%;
     right: 0;
@@ -75,6 +76,12 @@ img {
           text-align: right;
           text-transform: lowercase;
           font-weight: normal; }
+      .gallery .intro_screen .intro_padding .intro_hotspot {
+        color: #d51c38;
+        text-decoration: underline;
+        display: inline; }
+      .gallery .intro_screen .intro_padding .overlay {
+        left: -65%; }
   .gallery .imageGallery {
     list-style: none;
     margin: 50px 0 15px 0;
@@ -99,80 +106,6 @@ img {
         position: absolute;
         border: 2px solid;
         border-color: rgba(213, 28, 56, 0); }
-      .gallery .imageGallery li.single_image .overlay {
-        position: absolute;
-        z-index: 10000;
-        top: 0;
-        left: 0;
-        width: 50%;
-        height: 100%;
-        display: none; }
-        .gallery .imageGallery li.single_image .overlay.instructions .overlay_container {
-          left: 25%;
-          top: 30%; }
-        .gallery .imageGallery li.single_image .overlay .overlay_container {
-          width: 50%;
-          height: auto;
-          /* min-height:50%; */
-          background-color: #eeebe0;
-          top: 60px;
-          right: 7.5%;
-          border: 2px solid;
-          border-color: #d51c38;
-          margin-top: 54px;
-          position: absolute;
-          -moz-box-shadow: 0px 3px 10px rgba(68, 68, 68, 0.6);
-          -webkit-box-shadow: 0px 3px 10px rgba(68, 68, 68, 0.6);
-          box-shadow: 0px 3px 10px rgba(68, 68, 68, 0.6); }
-          .gallery .imageGallery li.single_image .overlay .overlay_container.full {
-            width: 90%; }
-          .gallery .imageGallery li.single_image .overlay .overlay_container .overlay_content {
-            height: auto;
-            width: 100%;
-            position: static;
-            /* overflow: scroll; */
-            text-align: left; }
-          .gallery .imageGallery li.single_image .overlay .overlay_container img {
-            max-height: 637px;
-            max-width: 100%;
-            width: auto;
-            height: auto;
-            position: relative;
-            margin: 0 auto; }
-          .gallery .imageGallery li.single_image .overlay .overlay_container .tombstone {
-            width: 100%;
-            margin: 2% 0 0;
-            text-align: left; }
-          .gallery .imageGallery li.single_image .overlay .overlay_container .left_column {
-            width: 50%;
-            height: 100%;
-            left: 0;
-            top: 0;
-            position: absolute; }
-          .gallery .imageGallery li.single_image .overlay .overlay_container .right_column {
-            width: 40%;
-            height: 90%;
-            padding: 5%;
-            position: relative;
-            float: right; }
-          .gallery .imageGallery li.single_image .overlay .overlay_container .two_column {
-            width: 96%;
-            height: 96%;
-            padding: 2%;
-            position: relative;
-            float: right; }
-          .gallery .imageGallery li.single_image .overlay .overlay_container .close {
-            position: absolute;
-            top: -50px;
-            right: -2px;
-            border: 2px solid;
-            border-color: #d51c38;
-            color: #d51c38;
-            padding: 10px;
-            background-color: #eeebe0;
-            -moz-box-shadow: 0px 3px 10px rgba(68, 68, 68, 0.6);
-            -webkit-box-shadow: 0px 3px 10px rgba(68, 68, 68, 0.6);
-            box-shadow: 0px 3px 10px rgba(68, 68, 68, 0.6); }
     .gallery .imageGallery img {
       width: 100%;
       height: auto;
@@ -234,6 +167,81 @@ img {
         background-color: #e71c38; }
       .gallery .theDots li.active .arrow-bottom {
         border-top-color: #e71c38; }
+
+.overlay {
+  position: absolute;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  display: none; }
+  .overlay.instructions .overlay_container {
+    left: 25%;
+    top: 30%; }
+  .overlay .overlay_container {
+    width: 50%;
+    height: auto;
+    /* min-height:50%; */
+    background-color: #eeebe0;
+    top: 60px;
+    right: 7.5%;
+    border: 2px solid;
+    border-color: #d51c38;
+    margin-top: 54px;
+    position: absolute;
+    -moz-box-shadow: 0px 3px 10px rgba(68, 68, 68, 0.6);
+    -webkit-box-shadow: 0px 3px 10px rgba(68, 68, 68, 0.6);
+    box-shadow: 0px 3px 10px rgba(68, 68, 68, 0.6); }
+    .overlay .overlay_container.full {
+      width: 90%; }
+    .overlay .overlay_container .overlay_content {
+      height: auto;
+      width: 100%;
+      position: static;
+      /* overflow: scroll; */
+      text-align: left; }
+    .overlay .overlay_container img {
+      max-height: 637px;
+      max-width: 100%;
+      width: auto;
+      height: auto;
+      position: relative;
+      margin: 0 auto; }
+    .overlay .overlay_container .tombstone {
+      width: 100%;
+      margin: 2% 0 0;
+      text-align: left; }
+    .overlay .overlay_container .left_column {
+      width: 50%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      position: absolute; }
+    .overlay .overlay_container .right_column {
+      width: 40%;
+      height: 90%;
+      padding: 5%;
+      position: relative;
+      float: right; }
+    .overlay .overlay_container .two_column {
+      width: 96%;
+      height: 96%;
+      padding: 2%;
+      position: relative;
+      float: right; }
+    .overlay .overlay_container .close {
+      position: absolute;
+      top: -50px;
+      right: 0px;
+      border: 2px solid;
+      border-color: #d51c38;
+      color: #d51c38;
+      padding: 10px;
+      background-color: #eeebe0;
+      -moz-box-shadow: 0px 3px 10px rgba(68, 68, 68, 0.6);
+      -webkit-box-shadow: 0px 3px 10px rgba(68, 68, 68, 0.6);
+      box-shadow: 0px 3px 10px rgba(68, 68, 68, 0.6); }
 
 .gallery_controls {
   position: absolute;
