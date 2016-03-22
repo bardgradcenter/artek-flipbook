@@ -130,7 +130,7 @@ img {
 			}
 		}
 		img {
-			width: 100%;
+			width: 870px;
 			height: auto;
 			max-width: 100%;
 			max-height: 100%;
@@ -188,18 +188,7 @@ img {
 				border: 6px solid transparent;
 				border-top-color: black;
 			}
-			&:hover {
-				div.page {
-					background-color: #e71c38;
-					border-color: #e71c38;
-				}
-				.arrow-top {
-					background-color: #e71c38;
-				}
-				.arrow-bottom {
-					border-top-color: #e71c38;
-				}
-			}
+			
 			&.active {
 				div.page {
 					background-color: #e71c38;
