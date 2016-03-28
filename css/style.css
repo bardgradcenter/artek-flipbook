@@ -22,7 +22,7 @@ img {
     left: 50%; }
   #container.AMA .imageGallery {
     left: 100%; }
-    #container.AMA .imageGallery img {
+    #container.AMA .imageGallery .image_container img {
       width: 100%;
       height: auto;
       max-width: 100%;
@@ -33,7 +33,7 @@ img {
     top: 0; }
   #container.AMA .overlay {
     width: 63%;
-    font-size: .75em; }
+    font-size: 1em; }
   #container.AMA .overlay_container {
     top: .5%;
     right: 0;
@@ -110,7 +110,7 @@ img {
       .gallery .imageGallery li.single_image .hotspot {
         position: absolute;
         border: 2px solid;
-        border-color: rgba(213, 28, 56, 0); }
+        border-color: #d51c38; }
     .gallery .imageGallery img {
       width: 870px;
       height: auto;
