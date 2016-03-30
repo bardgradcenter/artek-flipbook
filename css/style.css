@@ -20,6 +20,16 @@ img {
   font-size: .75em; }
   #container.AMA .intro_screen {
     left: 50%; }
+    #container.AMA .intro_screen .intro-image {
+      position: absolute;
+      right: 105.4%;
+      width: 100%;
+      height: 100%; }
+      #container.AMA .intro_screen .intro-image img {
+        width: 100%;
+        position: absolute;
+        height: auto;
+        bottom: 0; }
   #container.AMA .imageGallery {
     left: 100%; }
     #container.AMA .imageGallery .image_container img {
@@ -85,6 +95,10 @@ img {
         color: #d51c38;
         text-decoration: underline;
         display: inline; }
+      .gallery .intro_screen .intro_padding .intro_overlay {
+        font-size: .75em !important; }
+        .gallery .intro_screen .intro_padding .intro_overlay .tombstone {
+          margin: 0; }
       .gallery .intro_screen .intro_padding .overlay {
         left: -65%; }
   .gallery .imageGallery {
