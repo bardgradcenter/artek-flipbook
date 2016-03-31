@@ -124,7 +124,7 @@ img {
       .gallery .imageGallery li.single_image .hotspot {
         position: absolute;
         border: 2px solid;
-        border-color: #d51c38; }
+        border-color: rgba(213, 28, 56, 0); }
     .gallery .imageGallery img {
       width: 870px;
       height: auto;
@@ -214,7 +214,7 @@ img {
       /* overflow: scroll; */
       text-align: left; }
     .overlay .overlay_container img {
-      max-height: 607px;
+      max-height: 577px;
       max-width: 100%;
       width: auto;
       height: auto;
