@@ -100,7 +100,7 @@ function timerIncrement() {
 		if($('.intro_screen').hasClass('visible')){
 
 		} else {
-		//	gohome();
+			gohome();
 		}
 	}
 }
