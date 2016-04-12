@@ -1028,6 +1028,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/AMA_54_a.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/AMA_54_a.png",
+		"outputAbbreviatedPath": "\/images\/AMA_54_a.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/AMA_59.jpg": {
 		"fileType": 16384,
 		"ignore": 0,

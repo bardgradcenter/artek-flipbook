@@ -83,8 +83,41 @@ $( window ).load(function() {
 	 $(this).height(maxHeight);
 	});
 });
+function gohome(){
+	if($('.intro_screen').hasClass('visible')){
 
+	} else {
+		$('.gallery_controls .prev').trigger('click');
+		setTimeout(function(){
+			gohome();
+		}, 15);
+	}
+}
+
+idleTime = 0;
+function timerIncrement() {
+	idleTime = idleTime + 1;
+	if( idleTime > 1) {
+		if($('.intro_screen').hasClass('visible')){
+
+		} else {
+			gohome();
+		}
+	}
+}
 $(function(){
+
+	//Increment the idle time counter every minute.
+    var idleInterval = setInterval(timerIncrement, 30000); // Half minute
+
+    //Zero the idle timer on mouse movement.
+    $(this).mousemove(function (e) {
+        idleTime = 0;
+    });
+    $(this).keypress(function (e) {
+        idleTime = 0;
+    });
+	
 	$.fn.isAfter = function(sel){
         return this.prevAll().filter(sel).length !== 0;
     };
