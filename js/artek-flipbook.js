@@ -107,7 +107,7 @@ function timerIncrement() {
 $(function(){
 	
 	//Increment the idle time counter every minute.
-    var idleInterval = setInterval(timerIncrement, 30000); // Half minute
+    var idleInterval = setInterval(timerIncrement, 60000); // Half minute
 
     //Zero the idle timer on mouse movement.
     $(this).mousemove(function (e) {
