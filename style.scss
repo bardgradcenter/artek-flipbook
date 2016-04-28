@@ -1,6 +1,9 @@
 * {
 	padding:0;
 	margin:0;
+	-ms-touch-action: none;
+	-ms-content-zooming: none;
+	-ms-user-select:none;
 }
 body {
 	width: 100%;
@@ -33,6 +36,9 @@ img {
 				    bottom: 0;
 				}
 			}
+			.overlay {
+				top:-50px;
+			}
 		}
 		.imageGallery {
 			left: 100%;
@@ -54,10 +60,10 @@ img {
 			font-size: 1em;
 		}
 		.overlay_container {
-			top:.5%;
+			top:0px;
 			right:0;
 			bottom:2.5%;
-			left: 2.5%;
+			left: 4.5%;
 			border:none;
 			-moz-box-shadow: none;
 			-webkit-box-shadow: none;
@@ -91,11 +97,7 @@ img {
 		position: absolute;
 		font-size: 1.33333333333333em;
 		line-height: 1.25em;
-		-webkit-transform: translate3d(0,0,0);
-		-moz-transform: translate3d(0,0,0);
-		-ms-transform: translate3d(0,0,0);
-		-o-transform: translate3d(0,0,0);
-		transform: translate3d(0,0,0);
+		
 		.intro_padding {
 			border:3px solid black;
 			height: 100%;
@@ -137,21 +139,13 @@ img {
 		background: transparent;
 		position: relative;
 		left:435px;
-		-webkit-transform: translate3d(0,0,0);
-		-moz-transform: translate3d(0,0,0);
-		-ms-transform: translate3d(0,0,0);
-		-o-transform: translate3d(0,0,0);
-		transform: translate3d(0,0,0);
+		
 		li.single_image {
 			text-align: center;
 			float: left;
 			position: absolute;
 			display: block;
-			-webkit-transform: translate3d(0,0,0);
-			-moz-transform: translate3d(0,0,0);
-			-ms-transform: translate3d(0,0,0);
-			-o-transform: translate3d(0,0,0);
-			transform: translate3d(0,0,0);
+			
 			/* background-color: #fff; */
 			&.active {
 				display: block;
